@@ -6,9 +6,13 @@
 
 #footer, #banner
 {
-	font-size:20px;
+	font-size:25px;
 	font-weight:bold;
 	text-align:center;
+	background-color:RGB(138, 192, 7);
+	color:white;
+	border-radius:6px;
+	padding:10px;
 }
 
 body
@@ -33,6 +37,11 @@ body
 #content
 {
 	border:0px solid green;
+	background-color:RGB(221,221,221);
+	padding:20px;
+	border-radius:6px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 
 #footer
