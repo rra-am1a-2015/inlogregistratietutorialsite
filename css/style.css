@@ -1,0 +1,42 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+#footer, #banner
+{
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+
+body
+{
+	font-family:Verdana, Arial;
+	font-size:14px;
+}
+
+#container
+{
+	border:0px solid blue;
+	padding:0px;
+	margin:30px auto;
+	width:800px;
+}
+
+#banner
+{
+	border:0px solid red;
+}
+
+#content
+{
+	border:0px solid green;
+}
+
+#footer
+{
+	border:0px solid red;
+	
+}
