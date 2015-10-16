@@ -4,6 +4,17 @@
 	padding:0px;
 }
 
+#link
+{
+	background-color:rgb(255, 127, 0);
+	color:white;
+	border-radius:6px;
+	text-align:center;
+	margin-top:10px;
+	font-size:16px;
+	padding:10px;
+}
+
 #footer, #banner
 {
 	font-size:25px;
@@ -48,4 +59,15 @@ body
 {
 	border:0px solid red;
 	
+}
+
+a
+{
+	color:white;
+	text-decoration:none;
+}
+
+a:hover
+{
+	font-size:15px;
 }

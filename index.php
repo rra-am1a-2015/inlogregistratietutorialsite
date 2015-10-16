@@ -9,8 +9,12 @@
 			<div id="banner">
 				Banner
 			</div>
+			<div id="link">
+				<a href="">home</a>
+				<a href="">test</a>
+			</div>
 			<div id="content">
-				Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site!Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! Dit wordt de container voor onze site! 
+				<?php include("testtekst.php");?>
 			</div>
 			<div id="footer">
 				footer
