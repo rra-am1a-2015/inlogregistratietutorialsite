@@ -25,8 +25,14 @@
 		// Succesmelding en een redirect naar homepage
 		$emailaddress = $_POST["email"];
 		$subject = "Activateer uw account voor inlogregistratietutorialsite";
-		$message = "Bedankt voor het registreren, klik op de volgende activatielink. http://localhost/2015-2016/blok1/am1a/inlogregistratietutorialsite/index.php?content=activatie";
-		mail($emailaddress, $subject, $message);
+		$message = "<h3>Bedankt voor het registreren</h3>, klik op de volgende activatielink. http://localhost/2015-2016/blok1/am1a/inlogregistratietutorialsite/index.php?content=activatie";
+		$headers = "From: adruijter@gmail.com\r\n";
+		$headers .= "Cc: hsok@mboutrecht.nl, gft@mboutrecht.nl\r\n";
+		$headers .= "Bcc: gnb@mboutrecht.nl, hpl@mboutrecht.nl\r\n";
+		$headers .= "Content-Type: text/html; charset=UTF-8";
+		
+		
+		mail($emailaddress, $subject, $message, $headers);
 		echo "Uw gegevens zijn correct door ons ontvangen. U ontvangt een bevestigings e-mail met daarin een activatielink. Voor het kunnen inloggen is het nodig dat u uw account op deze manier activeert. U wordt doorgestuurd naar de homepage.";
 		header("refresh:6000; url=index.php?content=homepage");
 	}
