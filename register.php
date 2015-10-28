@@ -18,6 +18,8 @@
 	
 	$result = mysqli_query($connection, $query);
 	
+	$last_id = mysqli_insert_id($connection);
+	
 	//var_dump($result);
 	
 	if ( $result )
@@ -25,7 +27,21 @@
 		// Succesmelding en een redirect naar homepage
 		$emailaddress = $_POST["email"];
 		$subject = "Activateer uw account voor inlogregistratietutorialsite";
-		$message = "<h3>Bedankt voor het registreren</h3>, klik op de volgende activatielink. http://localhost/2015-2016/blok1/am1a/inlogregistratietutorialsite/index.php?content=activatie";
+		$message = "<html>
+						<head>
+							<style>
+								body
+								{
+									font-size:12px;
+									color: black;
+								}
+							</style>
+						</head>
+						<body>		
+						Bedankt voor het registreren, klik <a href='http://localhost/2015-2016/blok1/am1a/inlogregistratietutorialsite/index.php?content=activate&id=".$last_id."'>hier</a> om uw account te activeren. 
+						</body>
+					</html>";
+		
 		$headers = "From: adruijter@gmail.com\r\n";
 		$headers .= "Cc: hsok@mboutrecht.nl, gft@mboutrecht.nl\r\n";
 		$headers .= "Bcc: gnb@mboutrecht.nl, hpl@mboutrecht.nl\r\n";

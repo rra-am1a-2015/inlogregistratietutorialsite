@@ -1,0 +1,21 @@
+Date: Mon, 26 Oct 2015 11:37:17 +0100
+Subject: Activateer uw account voor inlogregistratietutorialsite
+To: slk@sdkl.nl
+X-PHP-Originating-Script: 0:register.php
+From: adruijter@gmail.com
+Cc: hsok@mboutrecht.nl, gft@mboutrecht.nl
+Content-Type: text/html; charset=UTF-8
+
+<html>
+		<head>
+			<style>
+				body
+				{
+					font-size:20px;
+				}
+			</style>
+		</head>
+		<body>		
+		<h3>Bedankt voor het registreren</h3>, klik op de volgende activatielink. http://localhost/2015-2016/blok1/am1a/inlogregistratietutorialsite/index.php?content=activatie
+		</body>
+		</html>
