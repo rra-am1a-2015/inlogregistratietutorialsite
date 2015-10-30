@@ -1,4 +1,13 @@
 <?php
+	if ( isset($_POST["submit"]))
+	{
+		var_dump($_POST);
+	
+	}
+	else
+	{
+
+
 	include("db_connect.php");
 	
 	$query = "UPDATE 	`users`
@@ -11,20 +20,20 @@
 	
 	if ($result)
 	{
-		echo "Uw account is geactiveerd. Kies een wachtwoord van minimaal 8 tekens.";
+		echo "<h3>Uw account is geactiveerd. Kies een wachtwoord van minimaal 8 tekens.</h3><br>";
 ?>
-	<form class="table" action="" method="post">
+	<form class="table" action="index.php?content=activate" method="post">
 		<table>
 			<tr>
 				<td>kies een wachtwoord</td>
 				<td><input type="password" name="password"></td>
 			</tr>
 			<tr>
-				<td>type uw gekozen wachtwoord nogmaals</td>
+				<td>type nogmaal uw wachtwoord</td>
 				<td><input type="password" name="check_password"></td>
 			</tr>
 			<tr>
-				<td></td>
+				<td><input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>"></td>
 				<td><input type="submit" name="submit"></td>
 			</tr>
 		</table>
@@ -37,5 +46,6 @@
 	{
 		echo "Uw account is niet geactiveerd. Neem contact op met systeembeheer via info@inlogregistratietutorialsite.nl. U wordt doorverwezen naar de homepage";
 		header("refresh:4;url=homepage");
+	}
 	}
 ?>
