@@ -8,12 +8,14 @@
 								   `firstname`,
 								   `infix`,
 								   `lastname`,
-								   `email`) 
+								   `email`,
+								   `activation`) 
 			  VALUES 			  (NULL,
 								   '".$_POST["firstname"]."',
 								   '".$_POST["infix"]."',
 								   '".$_POST["lastname"]."',
-								   '".$_POST["email"]."');";
+								   '".$_POST["email"]."',
+								   'false');";
 	//echo $query;exit();
 	
 	$result = mysqli_query($connection, $query);

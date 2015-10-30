@@ -1,0 +1,16 @@
+Date: Wed, 28 Oct 2015 11:31:09 +0100
+Subject: Bedankt voor het registreren.
+To: jsdlfkj@lkjsdf.nl, freek@gmail.com
+X-PHP-Originating-Script: 0:register.php
+From: Docent Applicatie en mediaontwikkeling Arjan de Ruijter <rra@mboutrecht.nl>
+Cc: info@test.nl
+Content-type:text/html;charset=UTF-8
+
+
+		<html>
+			<head>
+			</head>
+			<body>
+				<h3 style='color:green; font-family:Verdana; font-size:60px;'>Hallo</h3>
+			</body>		
+		</html>
