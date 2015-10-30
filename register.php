@@ -52,7 +52,7 @@
 		
 		mail($emailaddress, $subject, $message, $headers);
 		echo "Uw gegevens zijn correct door ons ontvangen. U ontvangt een bevestigings e-mail met daarin een activatielink. Voor het kunnen inloggen is het nodig dat u uw account op deze manier activeert. U wordt doorgestuurd naar de homepage.";
-		header("refresh:6000; url=index.php?content=homepage");
+		header("refresh:6; url=index.php?content=homepage");
 	}
 	else
 	{
