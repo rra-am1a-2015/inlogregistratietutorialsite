@@ -2,6 +2,19 @@
 	if ( isset($_POST["submit"]))
 	{
 		var_dump($_POST);
+		
+		$result = strcmp($_POST["password"], $_POST["check_password"]);
+		
+		if ( $result == 0)
+		{
+			echo "Ze zijn gelijk";
+			// Schrijf het wachtwoord naar de tabel users
+		}
+		else
+		{
+			echo "Wachtwoorden zijn ongelijk";
+			// Meld dat de wachtwoorden niet gelijke en stuur door naar activate.php met het id!
+		}
 	
 	}
 	else
