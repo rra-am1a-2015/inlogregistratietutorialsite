@@ -1,13 +1,13 @@
 <?php
 	if ( isset($_POST["submit"]))
 	{
-		var_dump($_POST);
+		//var_dump($_POST);
 		
 		$result = strcmp($_POST["password"], $_POST["check_password"]);
 		
 		if ( $result == 0)
 		{
-			echo "Ze zijn gelijk";
+			//echo "Ze zijn gelijk";
 			// Schrijf het wachtwoord naar de tabel users
 			include("db_connect.php");
 			
@@ -33,8 +33,9 @@
 		}
 		else
 		{
-			echo "Wachtwoorden zijn ongelijk";
-			// Meld dat de wachtwoorden niet gelijke en stuur door naar activate.php met het id!
+			echo "U Wachtwoorden zijn niet gelijk. Probeer het nogmaals.";
+			// Meld dat de wachtwoorden niet gelijk zijn en stuur door naar activate.php met het id!
+			header("refresh:5;url=index.php?content=activate&id=".$_POST["id"]);
 		}
 	
 	}
