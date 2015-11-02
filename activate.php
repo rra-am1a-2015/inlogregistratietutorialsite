@@ -9,6 +9,27 @@
 		{
 			echo "Ze zijn gelijk";
 			// Schrijf het wachtwoord naar de tabel users
+			include("db_connect.php");
+			
+			$query = "UPDATE 	`users`
+					  SET		`password`	= '".$_POST["password"]."'
+					  WHERE		`id`		= '".$_POST["id"]."';";
+			
+			//echo $query; exit();
+			$result = mysqli_query($connection, $query);
+			
+			if ( $result )
+			{
+				echo "Uw password is succesvol gewijzigd. U wordt doorgestuurd naar de inlogpagina";
+				header("refresh:4;url=index.php?content=login_form");
+			}
+			else
+			{
+				echo "Er is een probleem opgetreden met het instellen van uw wachtwoord. Neem contact op met systeembeheer via info@inlogregistratietutorialsite.php. U wordt doorgestuurd naar de startpagina";
+				header("refresh:4;url=index.php?content=homepage");
+			}
+			
+			
 		}
 		else
 		{
