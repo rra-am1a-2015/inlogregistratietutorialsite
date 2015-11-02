@@ -3,19 +3,25 @@
 	include("db_connect.php");
 	
 	//var_dump($_POST);
+	date_default_timezone_set("Europe/Amsterdam");
+	$date = date("d-m-Y H:i:s");
+		
+	$password = $date.substr($_POST["firstname"],0, 3).substr($_POST["lastname"],strlen($_POST["lastname"])-4, 4);	
 	
 	$query = "INSERT INTO `users` (`id`,
 								   `firstname`,
 								   `infix`,
 								   `lastname`,
 								   `email`,
-								   `activation`) 
+								   `activation`,
+								   `password`) 
 			  VALUES 			  (NULL,
 								   '".$_POST["firstname"]."',
 								   '".$_POST["infix"]."',
 								   '".$_POST["lastname"]."',
 								   '".$_POST["email"]."',
-								   'false');";
+								   'false',
+								   '".md5($password)."');";
 	//echo $query;exit();
 	
 	$result = mysqli_query($connection, $query);
@@ -40,7 +46,7 @@
 							</style>
 						</head>
 						<body>		
-						Bedankt voor het registreren, klik <a href='http://localhost/2015-2016/blok1/am1a/inlogregistratietutorialsite/index.php?content=activate&id=".$last_id."'>hier</a> om uw account te activeren. 
+						Bedankt voor het registreren, klik <a href='http://localhost/2015-2016/blok1/am1a/inlogregistratietutorialsite/index.php?content=activate&id=".$last_id."&pw=".md5($password)."'>hier</a> om uw account te activeren. 
 						</body>
 					</html>";
 		
