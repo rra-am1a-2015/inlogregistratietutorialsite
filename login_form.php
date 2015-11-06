@@ -1,11 +1,17 @@
 <form class="table" action="index.php?content=login" method="post">
-	<table>
-		
-		
-		
+	<table>		
 		<tr>
 			<td>email: </td>
-			<td><input type="email" name="email"></td>		
+			<td>
+				<input type="email" 
+					   name="email" 
+					   value="<?php
+								if ( isset($_GET["email"]))
+							    { 
+									echo $_GET["email"];
+								}
+							  ?>">
+			</td>		
 		</tr>
 		<tr>
 			<td>wachtwoord: </td>
