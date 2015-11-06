@@ -21,7 +21,7 @@
 			if ( $result )
 			{
 				echo "Uw password is succesvol gewijzigd. U wordt doorgestuurd naar de inlogpagina";
-				header("refresh:4;url=index.php?content=login_form");
+				header("refresh:4;url=index.php?content=login_form&email=".$_POST["email"]);
 			}
 			else
 			{
@@ -50,6 +50,10 @@
 				  AND		`password` =	'".$_GET["pw"]."'";
 				  
 		$result = mysqli_query($connection, $query);
+		
+		$record = mysqli_fetch_assoc($result);
+		
+		$email = $record["email"];
 		
 		if ( mysqli_num_rows($result) > 0 )
 		{
@@ -80,6 +84,7 @@
 						<td>
 							<input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
 							<input type="hidden" name="pw" value="<?php echo $_GET["pw"]; ?>">
+							<input type="hidden" name="email" value="<?php echo $email; ?>">
 						</td>
 						<td><input type="submit" name="submit"></td>
 					</tr>
@@ -98,7 +103,7 @@
 		else
 		{
 			echo "U bent niet bevoegd om deze pagina te bekijken. U wordt doorgestuurd naar de startpagina";
-			header("refresh: url=index.php?content=homepage");		
+			header("refresh:5; url=index.php?content=homepage");		
 		}
 	}
 ?>
