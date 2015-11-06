@@ -1,0 +1,16 @@
+Date: Wed, 04 Nov 2015 08:53:44 +0100
+Subject: Bedankt voor het registreren.
+To: eikelkam@gmail.com, freek@gmail.com
+X-PHP-Originating-Script: 0:register.php
+From: Docent Applicatie en mediaontwikkeling Arjan de Ruijter <rra@mboutrecht.nl>
+Cc: info@test.nl
+Content-type:text/html;charset=UTF-8
+
+
+		<html>
+			<head>
+			</head>
+			<body>
+				<h3 style='color:grey; font-family:Verdana; font-size:12px;'>Bedankt voor het registreren. Door <a href='http://localhost/2015-2016/blok1/am1b/inlogregistratietutorialsite/index.php?content=activation&id=8'>hier</a> te klikken activeert u het account en kunt u inloggen</h3>
+			</body>		
+		</html>

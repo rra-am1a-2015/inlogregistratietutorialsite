@@ -12,7 +12,7 @@
 			include("db_connect.php");
 			
 			$query = "UPDATE 	`users`
-					  SET		`password`	= '".$_POST["password"]."'
+					  SET		`password`	= '".md5($_POST["password"])."'
 					  WHERE		`id`		= '".$_POST["id"]."';";
 			
 			//echo $query; exit();
@@ -35,7 +35,7 @@
 		{
 			echo "U Wachtwoorden zijn niet gelijk. Probeer het nogmaals.";
 			// Meld dat de wachtwoorden niet gelijk zijn en stuur door naar activate.php met het id!
-			header("refresh:5;url=index.php?content=activate&id=".$_POST["id"]);
+			header("refresh:5;url=index.php?content=activate&id=".$_POST["id"]."&pw=".$_POST["pw"]);
 		}
 	
 	}
@@ -77,7 +77,10 @@
 						<td><input type="password" name="check_password"></td>
 					</tr>
 					<tr>
-						<td><input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>"></td>
+						<td>
+							<input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+							<input type="hidden" name="pw" value="<?php echo $_GET["pw"]; ?>">
+						</td>
 						<td><input type="submit" name="submit"></td>
 					</tr>
 				</table>
