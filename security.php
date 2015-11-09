@@ -5,8 +5,14 @@
 		header("refresh:3; url=index.php?content=homepage");
 		exit();
 	}
+	else if (!($userrole == $_SESSION["userrole"]))
+	{
+		echo "U beschikt niet over de juiste gebruikersrol voor deze pagina. U wordt doorgestuurd naar de algemene homepage.";
+		header("refresh:4;url=index.php?content=homepage");
+		exit();	
+	}
 	else
 	{
-		echo "<h4>Welkom: ".$_SESSION["firstname"]." ".$_SESSION["infix"]." ".$_SESSION["lastname"]."</h4><br>Je bent ingelogd.";
+		echo "<h4>Welkom: ".$_SESSION["firstname"]." ".$_SESSION["infix"]." ".$_SESSION["lastname"]."(".$_SESSION["userrole"].")</h4>";
 	}
 ?>
