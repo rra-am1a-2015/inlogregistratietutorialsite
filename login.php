@@ -27,9 +27,27 @@
 			$_SESSION["email"] = $record["email"];
 			$_SESSION["activation"] = $record["activation"];
 			$_SESSION["password"] = $record["password"];
-			$_SESSION["appeltaart"] = "Ik houd van appeltaart";
+			$_SESSION["userrole"] = $record["userrole"];
 			
-			header("location:index.php?content=developer_homepage");
+			switch ($_SESSION["userrole"])
+			{
+				case "root":
+					header("location: index.php?content=root_homepage");
+					break;
+				case "administrator":
+					header("location: index.php?content=administrator_homepage");
+					break;
+				case "customer":
+					header("location: index.php?content=customer_homepage");
+					break;
+				case "developer":
+					header("location: index.php?content=developer_homepage");
+					break;
+				default:
+					header("location:index.php?content=homepage");
+					break;
+			}
+			
 		}
 		else
 		{
