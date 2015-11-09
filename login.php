@@ -1,6 +1,4 @@
 <?php
-	session_start();
-
 	if ( empty($_POST["email"]) || empty($_POST["password"]))
 	{ 
 		echo "U heeft uw password of emailadres niet ingevuld. Probeer het nogmaals";
@@ -22,17 +20,15 @@
 			// Meldt de gebruiker dat hij is ingelogd redirect naar homepage developer
 			$record = mysqli_fetch_assoc($result);
 			var_dump($record);
+			$_SESSION["id"] = $record["id"];
 			$_SESSION["firstname"] = $record["firstname"];
 			$_SESSION["infix"] = $record["infix"];
 			$_SESSION["lastname"] = $record["lastname"];
 			$_SESSION["email"] = $record["email"];
 			$_SESSION["activation"] = $record["activation"];
 			$_SESSION["password"] = $record["password"];
-			/*
+			$_SESSION["appeltaart"] = "Ik houd van appeltaart";
 			
-			
-			header("refresh:4;url=index.php?content=developer_homepage");
-			*/
 			header("location:index.php?content=developer_homepage");
 		}
 		else
