@@ -1,0 +1,22 @@
+Date: Fri, 13 Nov 2015 09:07:38 +0100
+Subject: Activateer uw account voor inlogregistratietutorialsite
+To: notactivated@gmail.com
+X-PHP-Originating-Script: 0:register.php
+From: adruijter@gmail.com
+Cc: hsok@mboutrecht.nl, gft@mboutrecht.nl
+Content-Type: text/html; charset=UTF-8
+
+<html>
+						<head>
+							<style>
+								body
+								{
+									font-size:12px;
+									color: black;
+								}
+							</style>
+						</head>
+						<body>		
+						Bedankt voor het registreren, klik <a href='http://localhost/2015-2016/blok1/am1a/inlogregistratietutorialsite/index.php?content=activate&id=5&pw=a5ba18ec669a9e78802a1bc3ce7a841c'>hier</a> om uw account te activeren. 
+						</body>
+					</html>

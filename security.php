@@ -5,6 +5,14 @@
 		header("refresh:3; url=index.php?content=homepage");
 		exit();
 	}
+	else if ($_SESSION["activation"] ==  'false')
+	{
+		echo "Uw account is nog niet geactiveerd. Kijk in uw mailbox naar de mail met activatielink. U wordt doorgestuurd naar de algemene startpagina";
+		session_unset();
+		session_destroy();
+		header("refresh:5;url=index.php?content=homepage");
+		exit();
+	}
 	else if (!($userrole == $_SESSION["userrole"]))
 	{
 		echo "U beschikt niet over de juiste gebruikersrol voor deze pagina. U wordt doorgestuurd naar de algemene homepage.";
@@ -13,6 +21,6 @@
 	}
 	else
 	{
-		echo "<h4>Welkom: ".$_SESSION["firstname"]." ".$_SESSION["infix"]." ".$_SESSION["lastname"]."(".$_SESSION["userrole"].")</h4>";
+		
 	}
 ?>
