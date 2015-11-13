@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<title>inlogregistratietutorialsite</title>	
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.php">
 		<!--<link rel="stylesheet" media="(max-width:400px) and (min-width:350px)" type="text/css" href="css/style-responsive.css">-->
 	</head>
 	<body>

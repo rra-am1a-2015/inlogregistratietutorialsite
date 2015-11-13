@@ -1,5 +1,7 @@
-<?php echo "Hallo"; ?>
-
+<?php
+	session_start();
+	header("Content-type: text/css; charset: UTF-8");
+?>
 *
 {
 	margin:0px;
@@ -17,25 +19,31 @@
 	padding:10px;
 }
 
-#user_info
-{
-	border:1px solid rgba(101, 193, 205, 1);
-	margin-top:10px;
-	padding:10px;
-	border-radius:6px;
-	background-color:rgba(101, 193, 205, 1);
-	color: white;
-}
+<?php 
+	if ( isset($_SESSION["id"]))
+	{
+	  echo "#user_info
+			{
+				border:1px solid rgba(101, 193, 205, 1);
+				margin-top:10px;
+				padding:10px;
+				border-radius:6px;
+				background-color:rgba(101, 193, 205, 1);
+				color: white;
+			}
 
-#user_info #right
-{
-	float: right;
-}
+			#user_info #right
+			{
+				float: right;
+			}
 
-#user_info #left
-{
-	float: left;
-}
+			#user_info #left
+			{
+				float: left;
+			}";
+	}
+?>
+
 
 #user_info #bottom
 {
