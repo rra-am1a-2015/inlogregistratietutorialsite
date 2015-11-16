@@ -17,6 +17,9 @@
 			<div id="user_info">
 				<?php include("user_info.php"); ?>
 			</div>
+			<div id="userrole_link">
+				<?php include("userrole_link.php"); ?>
+			</div>
 			<div id="content">
 				<?php include("redirect.php"); ?>
 			</div>

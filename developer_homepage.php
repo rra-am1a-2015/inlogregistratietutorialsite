@@ -2,6 +2,7 @@
 	$userrole = "developer";
 	include("security.php");
 	echo "Developer homepage alleen voor developers";
+	var_dump($_SERVER);
 ?>
 
 

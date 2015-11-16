@@ -19,6 +19,8 @@
 	padding:10px;
 }
 
+
+
 <?php 
 	if ( isset($_SESSION["id"]))
 	{
@@ -40,6 +42,17 @@
 			#user_info #left
 			{
 				float: left;
+			}
+			
+			#userrole_link
+			{
+				background-color:rgb(255, 127, 0);
+				color:white;
+				border-radius:6px;
+				text-align:center;
+				margin-top:10px;
+				font-size:16px;
+				padding:10px;
 			}";
 	}
 ?>

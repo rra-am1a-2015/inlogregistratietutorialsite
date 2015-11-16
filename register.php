@@ -51,8 +51,8 @@
 					</html>";
 		
 		$headers = "From: adruijter@gmail.com\r\n";
-		$headers .= "Cc: hsok@mboutrecht.nl, gft@mboutrecht.nl\r\n";
-		$headers .= "Bcc: gnb@mboutrecht.nl, hpl@mboutrecht.nl\r\n";
+		//$headers .= "Cc: hsok@mboutrecht.nl, gft@mboutrecht.nl\r\n";
+		//$headers .= "Bcc: gnb@mboutrecht.nl, hpl@mboutrecht.nl\r\n";
 		$headers .= "Content-Type: text/html; charset=UTF-8";
 		
 		
