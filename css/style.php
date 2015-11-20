@@ -208,3 +208,114 @@ a:hover
 	font-weight:bold;
 	width:171px;
 }
+
+#dev_home_container div
+{
+	border:1px solid red;
+	width:150px;
+	height:150px;
+	margin-top:0px;
+	background-color:blue;
+	color: white;
+	font-weight:bold;
+	font-size:16px;
+}
+
+#dev_home_container #nr_1
+{
+	background-color:yellow;
+	float:left;
+}
+
+#dev_home_container #nr_2
+{
+	background-color:black;
+	float:left;
+}
+
+#dev_home_container #nr_3
+{
+	background-color:purple;
+	float:left;
+}
+
+#dev_home_container #nr_4
+{
+	background-color:maroon;
+	float:left;
+}
+
+#dev_home_container #nr_5
+{
+	background-color:pink;
+	float:left;
+}
+
+#dev_home_container #nr_6
+{
+	background-color:brown;
+	float:left;
+	width:600px;
+}
+
+#dev_home_container #nr_7
+{
+	background-color:green;
+	float:left;
+	width:156px
+}
+
+#dev_home_container #nr_8
+{
+	background-color:grey;
+	float:left;
+	clear:left; 
+}
+
+#dev_home_container #nr_9
+{
+	background-color:yellow;
+	float:left;
+}
+
+#dev_home_container #nr_10
+{
+	background-color:black;
+	float:left;
+}
+
+#dev_home_container #nr_11
+{
+	background-color:purple;
+	float:left;
+}
+
+#dev_home_container #nr_12
+{
+	background-color:maroon;
+	float:left;
+}
+
+#dev_home_container #nr_13
+{
+	background-color:pink;
+	float:left;
+}
+
+#dev_home_container #nr_14
+{
+	background-color:brown;
+	float:left;
+}
+
+#dev_home_container #nr_15
+{
+	background-color:green;
+	float:left;
+}
+
+#dev_home_container #nr_16
+{
+	background-color:grey;
+	float:left;
+}

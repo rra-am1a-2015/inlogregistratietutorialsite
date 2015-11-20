@@ -1,19 +1,19 @@
 <?php
 
-$database_select = 0;
+$database_select = $_SERVER["HTTP_HOST"];
 
 	switch ($database_select)
 	{
-		case 0:
+		case "localhost":
 			$servername = "localhost";
 			$username = "adruijter";
 			$password = "geheim";
 			$dbname = "am1a_2015_loginregistration";
 			break;
-		case 1:
+		case "rra-am1a-2015.esy.es":
 			$servername = "mysql.hostinger.nl";
 			$username = "u905009722_rra";
-			$password = "";
+			$password = "Ezekkthoes1";
 			$dbname = "u905009722_am1a";
 			break;
 	}
