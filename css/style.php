@@ -357,8 +357,11 @@ a:hover
 #dev_container nav, section
 {
 	background-color: rgba(200, 200, 200, 1);
-	border-radius:6px;
+	
 	padding:1%;
+	padding-bottom:1000em;
+	margin-bottom:-999em;
+	border-radius:6px;
 }
 
 #dev_container nav
