@@ -209,6 +209,11 @@ a:hover
 	width:171px;
 }
 
+#dev_home_container
+{
+	overflow:hidden;
+}	
+
 #dev_home_container div
 {
 	border:1px solid red;
@@ -256,20 +261,22 @@ a:hover
 	background-color:brown;
 	float:left;
 	width:600px;
+	height:400px;
 }
 
 #dev_home_container #nr_7
 {
 	background-color:green;
 	float:left;
-	width:156px
+	width:156px;
+	height:400px
 }
 
 #dev_home_container #nr_8
 {
 	background-color:grey;
 	float:left;
-	clear:left; 
+	//clear:left; 
 }
 
 #dev_home_container #nr_9
@@ -318,4 +325,9 @@ a:hover
 {
 	background-color:grey;
 	float:left;
+}
+
+#dev_home_container br
+{
+	//clear:both;
 }
