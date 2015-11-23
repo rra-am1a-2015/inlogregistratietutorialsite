@@ -345,7 +345,7 @@ a:hover
 
 #dev_container
 {
-	border: 1px solid black;
+	border: 0 px solid black;
 	overflow:hidden;
 }
 
@@ -358,13 +358,13 @@ a:hover
 
 #dev_container nav
 {
-	width: 27%;
+	width: 10%;
 	float:left;
-	margin-right:4%;
+	margin-right:1%;
 }
 
 #dev_container section
 {
-	width: 65%;
+	width: 85%;
 	float:right;
 }
