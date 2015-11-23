@@ -212,6 +212,7 @@ a:hover
 #dev_home_container
 {
 	overflow:hidden;
+	//float:left;
 }	
 
 #dev_home_container div
@@ -219,7 +220,8 @@ a:hover
 	border:1px solid red;
 	width:150px;
 	height:150px;
-	margin-top:0px;
+	margin-top:2%;
+	margin-right:2%;
 	background-color:blue;
 	color: white;
 	font-weight:bold;
@@ -230,37 +232,46 @@ a:hover
 {
 	background-color:yellow;
 	float:left;
+	width:31%;
+	height:250px;
 }
 
 #dev_home_container #nr_2
 {
 	background-color:black;
-	float:left;
+	float:right;
+	width:31%;
+	height:400px;
 }
 
 #dev_home_container #nr_3
 {
 	background-color:purple;
 	float:left;
+	width:100%;
+	clear:both;
 }
 
 #dev_home_container #nr_4
 {
 	background-color:maroon;
 	float:left;
+	clear:left;
+	width:70%;
 }
 
 #dev_home_container #nr_5
 {
 	background-color:pink;
 	float:left;
+	width:21%;
 }
 
 #dev_home_container #nr_6
 {
 	background-color:brown;
 	float:left;
-	width:600px;
+	width:100%;
 	height:400px;
 }
 
@@ -329,5 +340,31 @@ a:hover
 
 #dev_home_container br
 {
-	//clear:both;
+	clear:both;
+}
+
+#dev_container
+{
+	border: 1px solid black;
+	overflow:hidden;
+}
+
+#dev_container nav, section
+{
+	background-color: rgba(200, 200, 200, 1);
+	border-radius:6px;
+	padding:1%;
+}
+
+#dev_container nav
+{
+	width: 27%;
+	float:left;
+	margin-right:4%;
+}
+
+#dev_container section
+{
+	width: 65%;
+	float:right;
 }
