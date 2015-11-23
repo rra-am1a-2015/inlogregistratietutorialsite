@@ -349,6 +349,11 @@ a:hover
 	overflow:hidden;
 }
 
+#dev_container a
+{
+	display:block;
+}
+
 #dev_container nav, section
 {
 	background-color: rgba(200, 200, 200, 1);
@@ -358,13 +363,13 @@ a:hover
 
 #dev_container nav
 {
-	width: 10%;
+	width: 19%;
 	float:left;
 	margin-right:1%;
 }
 
 #dev_container section
 {
-	width: 85%;
+	width: 76%;
 	float:right;
 }
