@@ -1,15 +1,15 @@
-<?php
+ <?php
 	if (isset($_SESSION["id"]))
 	{
 		switch($_SESSION["userrole"])
 		{
 			case "developer":
-				echo "<a href='index.php?content=developer_homepage'>CSS</a> -
-					  <a href='index.php?content=developer_homepage'>PHP</a> - 					   
-					  <a href='index.php?content=developer_homepage'>JavaScript</a> -
-					  <a href='index.php?content=developer_homepage'>JQuery</a> -
-					  <a href='index.php?content=developer_homepage'>SASS</a> -
-					  <a href='index.php?content=developer_homepage'>LESS</a>";
+				echo "<a href='index.php?content=developer_homepage&topic=css'>CSS</a> -
+					  <a href='index.php?content=developer_homepage&topic=php'>PHP</a> - 					   
+					  <a href='index.php?content=developer_homepage&topic=javascript'>JavaScript</a> -
+					  <a href='index.php?content=developer_homepage&opic=jquery'>JQuery</a> -
+					  <a href='index.php?content=developer_homepage&topic=sass'>SASS</a> -
+					  <a href='index.php?content=developer_homepage&topic=less'>LESS</a>";
 				break;
 			case "administrator":
 				echo "admin";
