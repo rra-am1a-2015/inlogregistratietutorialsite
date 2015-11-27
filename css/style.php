@@ -366,13 +366,13 @@ a:hover
 
 #dev_container nav
 {
-	width: 19%;
+	width: 24%;
 	float:left;
 	margin-right:1%;
 }
 
 #dev_container section
 {
-	width: 76%;
+	width: 71%;
 	float:right;
 }
