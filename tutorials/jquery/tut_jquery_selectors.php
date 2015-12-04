@@ -1,3 +1,18 @@
+<script>
+	$(document).ready(function()
+	{
+		//alert("Het werkt!");
+		
+		$("ul#list1 li").css("border", "2px solid red");
+		$("p").css("border", "3px solid blue");
+	
+	});
+
+
+</script>
+
+
+
 <h5>JQuery Selectors</h5>
 Geef alle li in ul met id list1 een rode rand.
 Geef alle p tags een blauwe rand.
