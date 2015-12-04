@@ -1,19 +1,26 @@
 <h5>JQuery Syntax</h5>
 
 <script type="text/javascript">
+	
 	$(document).ready(function()
 	{
 		var name = "Arjan";
-		// alert("Mijn naam is: " + name);
+		//alert("Mijn naam is: " + name);
 		// Javascript werkt gewoon!
 		document.getElementById("demoName").innerHTML = "Mijn naam is: " + name;
 		
 		$("#btn_1").click(function()
 		{
 			$("p").hide();
+		});	
+
+		$("#btn_2").dblclick(function()
+		{
+			$("li").hide();
 		});
-		
 	});
+	
+	
 </script>
 
 <p id="demoName"></p>
