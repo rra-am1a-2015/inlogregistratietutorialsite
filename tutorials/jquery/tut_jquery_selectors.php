@@ -5,7 +5,7 @@
 		
 		$("ul#list1 li").css("border", "2px solid red");
 		$("p").css("border", "3px solid blue");
-	
+		$("ul#list1 + p").css("border", "3px solid purple")
 	});
 
 
