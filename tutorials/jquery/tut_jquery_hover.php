@@ -4,12 +4,12 @@
 	<input type="submit" name="submit" />
 </form>
 
-
-<img src="./img/vogelbekdier.jpg" alt="vogelbekdier" width="300px"/>
-<p>Vogelbekdier</p> 
 <button id="btn_hide">hide</button>
 <button id="btn_show">show</button>
 <button id="btn_toggle">toggle</button>
+<img src="./img/vogelbekdier.jpg" alt="vogelbekdier" width="300px"/>
+<p>Vogelbekdier</p> 
+
 
 <script>
 	$(document).ready(function(){
@@ -52,9 +52,23 @@
 				   function(){
 						$(this).css({"font-size" : "1.5em",
 									 "padding" : "1em"});
-				   });
+				   });	
+
+		$("#btn_hide").click(function(){
+			$("img").hide();
+			$("p").hide();
+		});
 		
+		$("#btn_show").click(function(){
+			$("img").show();
+			$("p").show();
+		});
 		
+		$("#btn_toggle").click(function(){
+			$("img").toggle();
+			$("p").toggle();
+			
+		});
 	});
 	
 </script>
