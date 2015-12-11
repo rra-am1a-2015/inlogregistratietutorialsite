@@ -3,6 +3,8 @@
 <button id="btn_fade_in">Fade in</button>
 <button id="btn_fade_out">Fade out</button>
 <button id="btn_fade_toggle">Fade toggle out</button>
+<button id="btn_fade_to20">Fade to 20%</button>
+<button id="btn_fade_to80">Fade to 80%</button>
 <div id="fade_example">
 klik op deze zin en niet op de knop voor css opmaak
 </div>
@@ -49,6 +51,13 @@ klik op deze zin en niet op de knop voor css opmaak
 						
 						});
 		
+		$("#btn_fade_to20").attr(btnCSS).click(function(){
+			$("#fade_example").fadeTo(2000, 0.2);		
+		});
+		
+		$("#btn_fade_to80").attr(btnCSS).click(function(){
+			$("#fade_example").fadeTo(2000, 0.8);		
+		});
 		
 		$("#fade_example").click(function(){ 
 			//console.log("Het werkt");

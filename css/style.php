@@ -376,3 +376,14 @@ a:hover
 	width: 71%;
 	float:right;
 }
+
+#animation_demo
+{
+	border: 5px solid orange;
+	background-color: rgba(0, 0, 220, 0.5);
+	width: 100px;
+	height: 100px;
+	position:absolute;
+	left: 300px;
+}
+
