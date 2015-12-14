@@ -1,6 +1,7 @@
 <h4>Jquery Animation</h4>
 
 <div id="animation_demo">
+	Hallo
 </div>
 <button id="btn_animation">Start animatie</button>
 
@@ -16,12 +17,29 @@
 
 	
 	// De animation....
-		var changeCSS = { left : "200px"};
+		var changeCSSGoRight = { left : "200px",
+								fontSize : "2em", 
+								backgroundColor : "rgba(200, 0, 0, 0.6)",
+								padding : "0.5em",
+								width : "200px"};
+						  
+		var changeCSSGoDown = { top : "200px",
+								color : "white",
+								height : "200px"};
+		
+		var changeCSSGoLeft = { left : "0px",
+								backgroundColor : "black",
+								borderRadius : "0.3em",
+								width : "100px"};
+		
+		var changeCSSGoUp = { top : "0px",
+							  height : "100px"};
 	
 		$("#btn_animation").click(function(){
-			//alert("Hallo!");
-			$("#animation_demo").animate(changeCSS, 10000, function(){ alert("He He ik ben er!");});
-		
+			$("#animation_demo").animate(changeCSSGoRight, 2000, function(){ 
+				$(this).animate(changeCSSGoDown, 2000, function() {
+					$(this).animate(changeCSSGoLeft, 2000, function(){
+						$(this).animate(changeCSSGoUp, 2000)});});});		
 		});
 	});
 	

@@ -375,6 +375,7 @@ a:hover
 {
 	width: 71%;
 	float:right;
+	min-height: 300px;
 }
 
 #animation_demo
