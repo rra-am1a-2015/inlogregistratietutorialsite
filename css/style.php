@@ -379,11 +379,22 @@ a:hover
 
 #animation_demo
 {
-	border: 5px solid orange;
-	background-color: rgba(0, 0, 220, 0.5);
+	border: 10px solid orange;
+	background-color: rgba(0, 0, 200, 0.4);
 	width: 100px;
 	height: 100px;
-	position:absolute;
-	left: 300px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+#btn_animation
+{
+	padding: 0.5em;
+	font-size:2em;
+	margin-top:1em;
+	color:rgba(20, 20, 20, 0.6);
+	border-radius: 0.3em;
+	//box-shadow: 10px 10px 5px #888888;
 }
 
