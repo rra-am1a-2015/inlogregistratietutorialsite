@@ -4,6 +4,7 @@
 	Hallo
 </div>
 <button id="btn_animation">Start animatie</button>
+<button id="btn_animation_stop">Stop!</button>
 
 <script>
 	$("document").ready(function(){
@@ -38,8 +39,15 @@
 		$("#btn_animation").click(function(){
 			$("#animation_demo").animate(changeCSSGoRight, 2000, function(){ 
 				$(this).animate(changeCSSGoDown, 2000, function() {
-					$(this).animate(changeCSSGoLeft, 2000, function(){
+					$(this).delay(3000).animate(changeCSSGoLeft, 2000, function(){
 						$(this).animate(changeCSSGoUp, 2000)});});});		
+		});
+		
+		var stopCSS = { top: "0px",
+						left : "0px"};
+		
+		$("#btn_animation_stop").click(function(){
+			$("#animation_demo").stop();
 		});
 	});
 	

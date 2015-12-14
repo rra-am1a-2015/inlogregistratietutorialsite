@@ -389,7 +389,7 @@ a:hover
 	left: 0px;
 }
 
-#btn_animation
+[id^="btn_animation"]
 {
 	padding: 0.5em;
 	font-size:2em;
