@@ -399,3 +399,13 @@ a:hover
 	//box-shadow: 10px 10px 5px #888888;
 }
 
+.button
+{
+	padding: 0.5em;
+	font-size:2em;
+	margin-top:1em;
+	color:rgba(20, 20, 20, 0.6);
+	border-radius: 0.3em;
+	//box-shadow: 10px 10px 5px #888888;
+}
+
