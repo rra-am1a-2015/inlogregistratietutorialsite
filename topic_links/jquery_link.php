@@ -7,3 +7,4 @@
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_slide&topic=jquery'>JQuery slide()</a>
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_animation&topic=jquery'>JQuery animation()</a>
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_get_set&topic=jquery'>JQuery Get/Set()</a>
+<a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_add&topic=jquery'>JQuery Add</a>
