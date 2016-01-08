@@ -8,10 +8,12 @@
 </ul>
 
 <button class="button" id="remove">Verwijderen onderste listItem</button>
+<button class="button" id="empty">Verwijder alle listItem in een keer</button>
 
 <script>
 	$(document).ready(function(){
 		$("ul").css( {backgroundColor : "grey", border : "2px solid red" });
+		
 		$("#remove").click(function(){
 			var listItems = $("li");
 			if ( listItems.length == 0)
