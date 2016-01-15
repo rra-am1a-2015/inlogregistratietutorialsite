@@ -12,7 +12,16 @@
 
 <script>
 	$(document).ready(function(){
-		$("ul").css( {backgroundColor : "grey", border : "2px solid red" });
+		
+		// Het maken van een JavaScript Object...
+		var ulLayout = { backgroundColor : "grey",
+						 border			 : "2px solid orange",
+						 listStyleType	 : "none",
+						 color			 : "white",
+						 padding		 : "1em"}
+		
+		
+		$("ul").css(ulLayout);
 		
 		$("#remove").click(function(){
 			var listItems = $("li");
@@ -27,6 +36,16 @@
 			listItems.eq(lengthListItems - 1).remove();	
 			console.log($("li").length);
 		});
+		
+		$("#empty").click(function(){
+			//alert("Het werkt");
+			
+			$("ul").empty();
+			$("ul").css("border", "0px solid red");
+			$(this).text("Niet meer drukken A.U.B.");
+		});
+		
+		
 		
 	});
 </script>

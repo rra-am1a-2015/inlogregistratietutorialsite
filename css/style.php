@@ -409,3 +409,37 @@ a:hover
 	//box-shadow: 10px 10px 5px #888888;
 }
 
+.tblAddClass
+{
+	border: 2px solid white;
+	border-collapse: collapse;
+	padding: 1em;
+}
+
+.tblEvenRow
+{
+	background-color: rgba(255, 174, 0, 1);
+}
+
+.tblOddRow
+{
+	background-color:rgba(101, 193, 205, 1);
+}
+
+.tblHeader
+{
+	background-color:rgba(138, 192, 7, 1);
+}
+
+.tblRowActive
+{
+	background-color: rgba(137, 137, 137, 1);
+	font-size: 1.1em;
+	font-weight:bold;
+	color: white;
+}
+
+.tblToggle
+{
+	font-size: 0.8em;
+}

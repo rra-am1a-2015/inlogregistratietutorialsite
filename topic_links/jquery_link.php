@@ -9,3 +9,5 @@
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_get_set&topic=jquery'>JQuery Get/Set()</a>
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_add&topic=jquery'>JQuery Add</a>
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_remove&topic=jquery'>JQuery Remove</a>
+<a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_addClass&topic=jquery'>JQuery AddClass</a>
+<a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_css&topic=jquery'>JQuery CSS</a>
