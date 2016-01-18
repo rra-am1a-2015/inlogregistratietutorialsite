@@ -157,6 +157,11 @@ a:hover
 	width:171px;
 }
 
+.styleUl
+{
+	list-style-type: none;
+}
+
 
 
 
@@ -407,6 +412,8 @@ a:hover
 	color:rgba(20, 20, 20, 0.6);
 	border-radius: 0.3em;
 	//box-shadow: 10px 10px 5px #888888;
+	outline: 0;
+	text-align: left;
 }
 
 .tblAddClass
