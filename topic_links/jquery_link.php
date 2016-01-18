@@ -11,3 +11,4 @@
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_remove&topic=jquery'>JQuery Remove</a>
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_addClass&topic=jquery'>JQuery AddClass</a>
 <a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_css&topic=jquery'>JQuery CSS</a>
+<a href='index.php?content=developer_homepage&page=tutorials/jquery/tut_jquery_ancestors&topic=jquery'>JQuery Ancestors</a>
