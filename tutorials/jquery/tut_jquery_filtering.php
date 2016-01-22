@@ -11,6 +11,7 @@
 </div>
 
 <hr>
+
 <h3>Verander heading 4</h3>
 <button class="button" id="btn_filter">Filter op heading h4</button>
 <button class="button" id="btn_not">Filter alle heading behalve h4</button>

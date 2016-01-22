@@ -21,6 +21,9 @@
 					case "jquery":
 						include("./topic_links/jquery_link.php");
 					break;
+					case "jquery-ui":
+						include("./topic_links/jquery_ui_link.php");
+					break;
 					case "sass":
 						include("./topic_links/sass_link.php");
 					break;
