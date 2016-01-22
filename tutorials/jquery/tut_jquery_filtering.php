@@ -12,9 +12,10 @@
 
 <hr>
 <h3>Verander heading 4</h3>
-<button class="button" id="btn_filter">Filter op h4</button>
+<button class="button" id="btn_filter">Filter op heading h4</button>
+<button class="button" id="btn_not">Filter alle heading behalve h4</button>
 
-<div id="heading">
+<div id="heading_filter">
 	<h1>Heading 1</h1>
 	<h2>Heading 2</h2>
 	<h3>Heading 3</h3>
@@ -62,7 +63,15 @@
 			
 		});
 		
+		$("#btn_filter").click(function(){
+			$("#heading_filter").children().filter("h4").css( { fontSize : "3em" });
 		
+		});
+		
+		$("#btn_not").click(function(){
+			$("#heading_filter").children().not("h4").css({ backgroundColor : "#ffffff"});
+		
+		});
 		
 	
 	});

@@ -450,3 +450,9 @@ a:hover
 {
 	font-size: 0.8em;
 }
+
+hr
+{
+	margin-top:1em;
+	margin-bottom: 1em;
+}
