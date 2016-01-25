@@ -1,1 +1,0 @@
-<h4>jQuery UI Calendar</h4>
