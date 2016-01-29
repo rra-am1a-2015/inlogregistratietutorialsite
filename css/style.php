@@ -119,7 +119,7 @@ a
 
 a:hover
 {
-	font-size:15px;
+	//font-size:15px;
 }
 
 #register

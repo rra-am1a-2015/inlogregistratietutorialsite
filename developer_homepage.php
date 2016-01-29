@@ -61,8 +61,17 @@
 
 <script>
 	$("document").ready(function(){
-		$("#link_accordion").accordion();
-		$("#link_accordion").find("div").css({ fontSize : "1.0em"});
+		$("#link_accordion").accordion({
+			heightStyle: "content"}); 
+		$("#link_accordion").find("div").css({ fontSize : "0.96em"});
+		$("#link_accordion").on("accordionactivate", function( event, ui){
+											var state = $("#link_accordion").accordion("option", "active");
+											alert(state);
+											alert(document.cookie);
+											document.cookie = "state=" + state;
+										});
+		alert(state);
+		
 	});
 </script>
 
