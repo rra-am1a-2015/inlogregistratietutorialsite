@@ -59,6 +59,13 @@
 	</section>
 </div>
 
+<script>
+	$("document").ready(function(){
+		$("#link_accordion").accordion();
+		$("#link_accordion").find("div").css({ fontSize : "1.0em"});
+	});
+</script>
+
 
 
 
