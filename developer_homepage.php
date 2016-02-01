@@ -73,24 +73,22 @@
 	
 	$("document").ready(function(){
 		$("#link_accordion").accordion({ heightStyle: "content",
-										 active		: false,
-										 collapsible: true}); 
+										 create: function(event, ui) { 
+													var stateActive = parseInt(getCookie("state"));
+													$( "#link_accordion" ).accordion( "option", "active", stateActive );
+												 },
+										 state		: false,
+										 collapsible: true
+										 }); 
 			
 		$("#link_accordion").find("div").css({ fontSize : "0.96em"});
-		$("#link_accordion").on("accordionactivate", function( event, ui){
-											var state = $("#link_accordion").accordion("option", "active");
-											//alert(state);
-											
-											document.cookie = "state=" + state;
-											document.cookie = "voornaam=Arjan";
-											var achternaam;
-											document.cookie = "achternaam=" + achternaam;
-											document.cookie = "leeftijd=47";
-											alert(document.cookie);
-											alert(getCookie("voornaam"));
-										});
-		alert(state);
 		
+		$("#link_accordion").on("accordionactivate", function( event, ui){
+											var state = $("#link_accordion").accordion("option", "active");											
+											document.cookie = "state=" + state;
+											var stateActive = parseInt(getCookie("state"));
+											$( "#link_accordion" ).accordion( "option", "active", stateActive );
+										});										
 	});
 </script>
 
