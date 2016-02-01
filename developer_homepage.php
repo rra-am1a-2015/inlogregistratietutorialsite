@@ -60,15 +60,34 @@
 </div>
 
 <script>
+	function getCookie(cname) {
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0; i<ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') c = c.substring(1);
+			if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+		}
+		return "";
+	}
+	
 	$("document").ready(function(){
-		$("#link_accordion").accordion({
-			heightStyle: "content"}); 
+		$("#link_accordion").accordion({ heightStyle: "content",
+										 active		: false,
+										 collapsible: true}); 
+			
 		$("#link_accordion").find("div").css({ fontSize : "0.96em"});
 		$("#link_accordion").on("accordionactivate", function( event, ui){
 											var state = $("#link_accordion").accordion("option", "active");
-											alert(state);
-											alert(document.cookie);
+											//alert(state);
+											
 											document.cookie = "state=" + state;
+											document.cookie = "voornaam=Arjan";
+											var achternaam;
+											document.cookie = "achternaam=" + achternaam;
+											document.cookie = "leeftijd=47";
+											alert(document.cookie);
+											alert(getCookie("voornaam"));
 										});
 		alert(state);
 		
