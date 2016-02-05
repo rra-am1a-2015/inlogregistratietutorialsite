@@ -2,36 +2,55 @@
 
 
 <p id="carBrand"></p>
-<button id="verwijder">verwijder</button>
+<button id="verwijder" >verwijder</button>
 
 
 <script>
 	var car = ["Mercedes", "Opel", "Fiat", "Lada"];
 	var carParagraaf = document.getElementById("carBrand");
 	
+	var neoNumber = ["1000111100", "1010111011", "1100000011", "1000110011", "0100110011"];
+	
 	car.push("Lamborghini");
 	car.unshift("Bugatti");
 	
-	function showCars()
+	function showCars(arrayVar)
 	{
 		var carAllElements = ""; 
-		for (var i=0; i < car.length; i++)
+		for (var i=0; i < arrayVar.length; i++)
 		{
-			carAllElements += car[i] + "<br>";
+			carAllElements += arrayVar[i] + "<br>";
 		}
 		carParagraaf.innerHTML = carAllElements;
 	}
 	
-	showCars();
+	showCars(car);
 	
 	var button = document.getElementById("verwijder");
 	
 	button.onclick = function(){
 		//alert("Hallo");
 		var verwijdert = car.pop();
-		alert("Het laatste element met de waarde: " + verwijdert + " is uit het array gehaald");
-		showCars();
+		//alert("Het laatste element met de waarde: " + verwijdert + " is uit het array gehaald");
+		car.unshift(verwijdert);
+		showCars(car);
 	};
+	
+	function neoTheOne()
+	{
+		var verwijdert = neoNumber.pop();
+		//alert("Het laatste element met de waarde: " + verwijdert + " is uit het array gehaald");
+		neoNumber.unshift(verwijdert);
+		showCars(neoNumber);	
+	}
+	
+	setInterval(neoTheOne, 500);
+	
+	$("#carBrand").css( { color : "#59D259", 
+						  backgroundColor : "black",
+						  width: "100px",
+						  padding: "2em"});
+						  
 	
 	
 	/*
