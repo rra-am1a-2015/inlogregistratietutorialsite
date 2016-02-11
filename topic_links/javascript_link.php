@@ -5,3 +5,4 @@
 <a href='index.php?content=developer_homepage&page=tutorials/javascript/tut_js_functions&topic=javascript'>JS functions</a>
 <a href='index.php?content=developer_homepage&page=tutorials/javascript/tut_js_arrays&topic=javascript'>JS arrays</a>
 <a href='index.php?content=developer_homepage&page=tutorials/javascript/tut_js_objects&topic=javascript'>JS objects</a>
+<a href='index.php?content=developer_homepage&page=tutorials/javascript/tut_js_objects_prototype&topic=javascript'>JS objects prototype</a>

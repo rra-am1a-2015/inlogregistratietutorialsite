@@ -26,8 +26,9 @@
 	var pTag = document.getElementById("showObjectValue");
 	
 	//pTag.innerHTML = persoon.toonPersoonsgegevens();
+	persoon.mijnEersteJSMethod();
 	
-	pTag.innerHTML = persoon.lievelingsKleuren[0];
+	pTag.innerHTML = persoon.lievelingsKleuren[2] + "<br>" + persoon.toonPersoonsgegevens();;
 	
 	
 	
