@@ -18,6 +18,9 @@
 					case "javascript":
 						include("./topic_links/javascript_link.php");
 					break;
+					case "json":
+						include("./topic_links/json_link.php");
+					break;
 					case "jquery":
 						include("./topic_links/jquery_link.php");
 					break;

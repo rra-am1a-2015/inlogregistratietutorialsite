@@ -7,6 +7,7 @@
 				echo "<a href='index.php?content=developer_homepage&topic=css'>CSS</a> -
 					  <a href='index.php?content=developer_homepage&topic=php'>PHP</a> - 					   
 					  <a href='index.php?content=developer_homepage&topic=javascript'>JavaScript</a> -
+					  <a href='index.php?content=developer_homepage&topic=json'>JSON</a> -
 					  <a href='index.php?content=developer_homepage&topic=jquery'>jQuery</a> -
 					  <a href='index.php?content=developer_homepage&topic=jquery-ui'>jQuery UI</a> -
 					  <a href='index.php?content=developer_homepage&topic=sass'>SASS</a> -

@@ -33,7 +33,7 @@ game.prototype.showInfo = function()
 			    "Genre game: " + this.genre + "<br>" +
 				"Rating game: " + this.rating + " sterren<br>" +
 				"Reviews van: " + this.showReviews() + 
-			    "Prijs game: &euro; " + this.price + "<hr>";	
+			    "Prijs game: &euro; " + this.price + "<button id=" + this.name + ">" + this.name + "</button><hr>";	
 }
 
 //game.prototype.rating = 4;
@@ -49,7 +49,8 @@ var games = [eersteGame, tweedeGame, derdeGame, vierdeGame];
 var output = "";
 for ( var i = 0; i < games.length; i++)
 {
-	output += games[i].showInfo();	
+	output += games[i].showInfo();
+		
 }
 
 var pProtoTxt = document.getElementById("p-prototype");
