@@ -1,4 +1,4 @@
-<p><h4>JSON home</h4></p>
+<h4>JSON home</h4>
 <p >
 	<ol style="margin: 2em;">
 		<li>What is JSON?</li>
