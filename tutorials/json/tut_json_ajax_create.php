@@ -1,4 +1,4 @@
-<h4>JSON AJAX invoegen record database</h4>
+<h4>JSON AJAX invoegen record in database</h4>
 <p>broodbeleg</p>
 <input type="text" id="broodbeleg" />
 <button id="btn_create">Sla op in database!</button>
@@ -19,7 +19,7 @@
 			if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
 			{
 				
-				//alert(xmlhttp.responseText);
+				alert(xmlhttp.responseText);
 			}
 		}
 		
