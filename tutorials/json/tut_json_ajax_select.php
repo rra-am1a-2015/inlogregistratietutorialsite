@@ -6,7 +6,7 @@
 
 
 <script>
-	document.getElementById("sel_broodbeleg").onmouseover = function(){
+	document.getElementById("sel_broodbeleg").onmouseenter = function(){
 		//alert("select open");
 		
 		var xmlhttp = new XMLHttpRequest();
