@@ -2,11 +2,6 @@
 	
 <select id="sel_broodbeleg">
 	<option>--broodbeleg--</option>
-	<option>hagelslag</option>
-	<option>jam</option>
-	<option>kaas</option>
-	<option>worst</option>
-	<option>pindakaas</option>
 </select>
 
 
@@ -20,13 +15,20 @@
 			//alert(xmlhttp.readyState + " | " + xmlhttp.status);
 			if ( xmlhttp.readyState == 4 && xmlhttp.status == 200)
 			{
-				//alert(xmlhttp.responseText
+				//alert(xmlhttp.responseText);
 				var jsObject = JSON.parse(xmlhttp.responseText);
 				
+				// Maak een handvat op het select tag
 				var select = document.getElementById("sel_broodbeleg");
 				
-				select.innerHTML = "<option>" + jsObject.broodbeleg + "</option>";
-				
+				// lees het array uit
+				output = "<option>--broodbeleg--</option>";
+				for ( var i=0; i < jsObject.broodbeleg.length; i++)
+				{
+					output += "<option>" + jsObject.broodbeleg[i] + "</option>";
+				}
+				select.innerHTML = output;
+				// Maak een tabel etenswaar in de database van deze site. Maak twee velden id en broodbeleg. Zet daar alle broodbelegsoorten in.
 			}		
 		}
 		
