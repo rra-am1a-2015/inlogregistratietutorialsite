@@ -5,8 +5,17 @@
 <script>
 	function makeTableLayout(tblData)
 	{
-		
-		return "";
+		$output = "";
+		for ( var i = 0; i < tblData.users.length; i++)
+		{
+			$output += tblData.users[i].id + " | " +
+					   tblData.users[i].firstname + " | " +
+					   tblData.users[i].infix + " | " +
+					   tblData.users[i].lastname + " | " +
+					   tblData.users[i].userrole + " | " +
+					   "<img src='./img/b_drop.png' alt='cross'/><br>";
+		}
+		return $output;
 	}
 
 
@@ -16,10 +25,10 @@
 		
 		if ( xmlhttp.readyState == 4 && xmlhttp.status == 200 )
 		{
-			alert(xmlhttp.responseText);
+			//alert(xmlhttp.responseText);
 			var tblUsersData = JSON.parse(xmlhttp.responseText);
 			
-			 document.getElementById("tblUsers").innerHTML = makeTableLayout(tblUsersData);	
+			document.getElementById("tblUsers").innerHTML = makeTableLayout(tblUsersData);	
 		}		
 	}
 	
