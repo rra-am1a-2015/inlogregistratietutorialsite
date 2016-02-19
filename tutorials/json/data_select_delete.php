@@ -2,6 +2,12 @@
 #Maak connectie met de database en selecteer alle records van de tabel users.
 include("../../db_connect.php");
 
+if (isset($_POST["id"]))
+{
+	$query = "DELETE FROM `users` WHERE `id` = '".$_POST["id"]."'";
+	mysqli_query($connection, $query);
+}
+
 # Maak een select query om alle records uit de users tabel te selecteren
 $query = "SELECT * FROM `users`";
 

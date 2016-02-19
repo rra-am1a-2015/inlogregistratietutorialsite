@@ -20,7 +20,9 @@
 	
 	function deleteRecordAsync(id)
 	{
-		alert(id);
+		xmlhttp.open("post", "http://localhost/am1a/tutorials/json/data_select_delete.php", true );
+		xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xmlhttp.send("id=" + id);
 	}
 
 
