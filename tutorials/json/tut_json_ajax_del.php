@@ -13,7 +13,7 @@
 					   tblData.users[i].infix + " | " +
 					   tblData.users[i].lastname + " | " +
 					   tblData.users[i].userrole + " | " +
-					   "<img src='./img/b_drop.png' alt='cross' id=" + tblData.users[i].id  + " onclick='deleteRecordAsync(" + tblData.users[i] + ");'/><br>";
+					   "<img src='./img/b_drop.png'	 alt='cross' onclick='deleteRecordAsync(" + tblData.users[i].id + ");'/><br>";
 		}
 		return $output;
 	}
