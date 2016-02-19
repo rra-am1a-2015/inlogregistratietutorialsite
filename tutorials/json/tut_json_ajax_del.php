@@ -13,9 +13,14 @@
 					   tblData.users[i].infix + " | " +
 					   tblData.users[i].lastname + " | " +
 					   tblData.users[i].userrole + " | " +
-					   "<img src='./img/b_drop.png' alt='cross'/><br>";
+					   "<img src='./img/b_drop.png' alt='cross' id=" + tblData.users[i].id  + " onclick='deleteRecordAsync(" + tblData.users[i] + ");'/><br>";
 		}
 		return $output;
+	}
+	
+	function deleteRecordAsync(id)
+	{
+		alert(id);
 	}
 
 
