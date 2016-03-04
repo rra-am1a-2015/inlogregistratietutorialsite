@@ -9,11 +9,11 @@
 		var output = "<table class='table'><tr><th>id</th><th>voornaam</th><th>tussenvoegsel</th><th>achternaam</th><th>gebruikersrol</th></tr>";
 		for ( var i = 0; i < tblData.users.length; i++)
 		{
-			output += "<tr><td>" + tblData.users[i].id + "</td><td> " +
-							tblData.users[i].firstname + "</td><td>" +
-							tblData.users[i].infix + "</td><td>" +
-							tblData.users[i].lastname + "</td><td>" +
-							tblData.users[i].userrole + "</td><td>" +
+			output += "<tr><td id='id" + tblData.users[i].id+ "'>" + tblData.users[i].id + "</td><td id='firstname" + tblData.users[i].id + "'> " +
+							tblData.users[i].firstname + "</td><td id='infix" + tblData.users[i].id + "'>" +
+							tblData.users[i].infix + "</td><td id='lastname" + tblData.users[i].id + "'>" +
+							tblData.users[i].lastname + "</td><td id='userrole" + tblData.users[i].id + "'>" +
+							tblData.users[i].userrole + "</td><td id='img" + tblData.users[i].id + "'>" +
 							"<img src='./img/b_edit.png' alt='cross' id='" + tblData.users[i].id + "'/></td></tr>";			
 		}
 		output += "</table>";
@@ -32,6 +32,8 @@
 	{
 		var id = obj.getAttribute("id");
 		console.log("id: " + id);
+		document.getElementById("adjust").innerHTML = "voornaam: <input type='text' value='" + document.getElementById("firstname" + id).innerHTML + "'>";
+		
 	}
 	
 	function updateRecordAsync(id)	
