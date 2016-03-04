@@ -182,8 +182,8 @@ a:hover
 .table
 {
 	border:0px solid grey;
-	width: 420px;
-	margin:0px auto;
+	width: 420px20px;
+	margin:0px 0px;
 }
 
 .table input
@@ -455,4 +455,9 @@ hr
 {
 	margin-top:1em;
 	margin-bottom: 1em;
+}
+
+#tblUsers 
+{
+	margin-right: 0px;
 }
