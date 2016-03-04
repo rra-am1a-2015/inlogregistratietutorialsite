@@ -32,15 +32,39 @@
 	{
 		var id = obj.getAttribute("id");
 		console.log("id: " + id);
-		document.getElementById("adjust").innerHTML = "voornaam: <input type='text' value='" + document.getElementById("firstname" + id).innerHTML + "'>";
+		document.getElementById("adjust").innerHTML = "Id: <input type='text' value='" + 
+													  document.getElementById("id" + id).innerHTML + "' readonly><br>" +
+													  "voornaam: <input type='text' value='" + 
+													  document.getElementById("firstname" + id).innerHTML + "' id='firstnameUpdate" + id + "''><br>" +
+													  "tussenvoegsel: <input type='text' value='" + 
+													  document.getElementById("infix" + id).innerHTML + "' id='infixUpdate" + id + "'><br>" +
+													  "achternaam: <input type='text' value='" + 
+													  document.getElementById("lastname" + id).innerHTML + "' id='lastnameUpdate" + id + "'><br>" +
+													  "gebruikersrol: <select id='userroleUpdate" + id + "'>" +
+													  "<option>" + document.getElementById("userrole" + id).innerHTML + "</option>" +
+													  "<option>root</option>" +
+													  "<option>administrator</option>" +
+													  "<option>customer</option>" +
+													  "<option>developer</option>" +
+													  "</select>" + "<br>" +
+													  "<button onclick='updateRecordAsync(" + id + ")'>Sla op!</button>";
+													  
 		
 	}
 	
+	
+	
 	function updateRecordAsync(id)	
 	{
+		var firstname = document.getElementById("firstnameUpdate" + id).value;
+		var infix = document.getElementById("infixUpdate" + id).value;
+		var lastname = document.getElementById("lastnameUpdate" + id).value;
+		var userrole = document.getElementById("userroleUpdate" + id).value;
+		
 		xmlhttp.open("post", "http://localhost/am1a/tutorials/json/data_select_update.php", true );
 		xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		xmlhttp.send("id=" + id);
+		xmlhttp.send("id=" + id + "&firstname=" + firstname + "&infix=" + infix + "&lastname=" + lastname + "&userrole=" + userrole);
+		document.getElementById("adjust").innerHTML = "";
 	}
 
 
@@ -60,6 +84,12 @@
 		}		
 	}
 	
-	xmlhttp.open("post", "http://localhost/am1a/tutorials/json/data_select_update.php", true );
-	xmlhttp.send();
+	showUsers();
+	
+	function showUsers()
+	{
+		xmlhttp.open("post", "http://localhost/am1a/tutorials/json/data_select_update.php", true );
+		xmlhttp.send();
+	}
+	
 </script>

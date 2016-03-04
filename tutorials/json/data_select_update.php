@@ -4,7 +4,12 @@ include("../../db_connect.php");
 
 if (isset($_POST["id"]))
 {
-	$query = "DELETE FROM `users` WHERE `id` = '".$_POST["id"]."'";
+	$query = "UPDATE `users` SET `firstname` = '".$_POST["firstname"]."',
+							     `infix` = '".$_POST["infix"]."',
+							     `lastname` = '".$_POST["lastname"]."',
+							     `userrole` = '".$_POST["userrole"]."'
+							 WHERE `id` = '".$_POST["id"]."'";
+	//echo $query;
 	mysqli_query($connection, $query);
 }
 
