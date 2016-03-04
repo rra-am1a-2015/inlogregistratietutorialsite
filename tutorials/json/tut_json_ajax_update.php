@@ -9,25 +9,12 @@
 		var output = "<table class='table'><tr><th>id</th><th>voornaam</th><th>tussenvoegsel</th><th>achternaam</th><th>gebruikersrol</th></tr>";
 		for ( var i = 0; i < tblData.users.length; i++)
 		{
-			//var imageTag = document.createElement("img");
-			//var objTest = {"voornaam" : "Arjan", "achternaam" : "Ruijter"};
-			//console.log(tblData.users[i]);
-			//imageTag.setAttribute("src", "./img/b_edit.png");
-			//imageTag.setAttribute("alt", "cross");
-			//var objTest = tblData.users[i];
-			//console.log(objTest);
-			
-			//imageTag.addEventListener("click", function(){makeUpdateTable(tblData.users[i])});
-			//document.getElementById("adjust").appendChild(imageTag);
 			output += "<tr><td>" + tblData.users[i].id + "</td><td> " +
 							tblData.users[i].firstname + "</td><td>" +
 							tblData.users[i].infix + "</td><td>" +
 							tblData.users[i].lastname + "</td><td>" +
 							tblData.users[i].userrole + "</td><td>" +
-							"<img src='./img/b_edit.png' alt='cross' id='" + tblData.users[i].id + "'/></td></tr>";
-			//document.getElementById("rratest" + i).addEventListener("click", function(){makeUpdateTable(objTest)});
-
-			
+							"<img src='./img/b_edit.png' alt='cross' id='" + tblData.users[i].id + "'/></td></tr>";			
 		}
 		output += "</table>";
 		
@@ -44,8 +31,7 @@
 	function makeUpdateTable(obj)
 	{
 		var id = obj.getAttribute("id");
-		console.log("Dit is het img tag waar ik op heb geklikt: " + id);
-		//alert(testing);
+		console.log("id: " + id);
 	}
 	
 	function updateRecordAsync(id)	
