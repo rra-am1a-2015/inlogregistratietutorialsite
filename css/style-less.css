@@ -1,0 +1,9 @@
+p#lessExample {
+  border: 2px solid #ecf7f9;
+  background-color: #b2e0e6;
+  color: #19474d;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin: 2em;
+  font-size: 2em;
+}

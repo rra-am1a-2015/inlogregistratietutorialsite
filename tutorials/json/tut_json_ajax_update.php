@@ -93,3 +93,5 @@
 	}
 	
 </script>
+
+Maak het voor het emailadres en activatieveld ook mogelijk om te updaten.

@@ -70,7 +70,7 @@
 	font-size:25px;
 	font-weight:bold;
 	text-align:center;
-	background-color:RGB(138, 192, 7);
+	background-color:RGB(138, 192, 8);
 	color:white;
 	border-radius:6px;
 	padding:10px;
