@@ -1,14 +1,18 @@
-
+// Hoi
 @baseColor: #65C1CD;
 @fontSize: 2em;
+@borderColor: white;
+@borderExample: 2px solid lighten(@baseColor, 35%);
+@margin: 2em 1em 2em 1em;
+
 
 p#lessExample
 {
-	border: 2px solid lighten(@baseColor, 35%);
+	border: @borderExample;
+	border-radius: 0.5em;
 	background-color: lighten(@baseColor, 20%);
 	color: darken(@baseColor, 40%);
 	padding: 1em;
-	border-radius:0.5em;
-	margin:2em;
+	margin: @margin;
 	font-size: @fontSize;
 }

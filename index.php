@@ -4,6 +4,7 @@
 	<head>
 		<title>inlogregistratietutorialsite</title>	
 		<link rel="stylesheet" type="text/css" href="css/style.php">
+		<link rel="stylesheet" type="text/css" href="css/style-split.css">
 		<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui-1.11.4.custom/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="./css/style-less.css">
 		
