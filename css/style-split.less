@@ -1,8 +1,4 @@
-//Hoi
-@headFootColor: RGB(138, 192, 8);
-@linkColor: RGB(255, 127, 0);
-
-
+@import url("./style-less.less");
 
 *
 {
@@ -33,11 +29,9 @@
 	font-size:45px;
 	font-weight:bold;
 	text-align:center;
-	background-color: @headFootColor;
-	border:5px solid darken(@headFootColor, 5%);
 	color:white;
-	border-radius:6px;
 	padding:10px;
+	.customBorderBackground;
 }
 
 body
@@ -397,3 +391,15 @@ hr
 {
 	margin-right: 0px;
 }
+
+p#lessExample
+{
+	border: @borderExample;
+	border-radius: 0.5em;
+	background-color: lighten(@baseColor, 20%);
+	color: darken(@baseColor, 40%);
+	padding: 1em;
+	margin: @margin;
+	font-size: @fontSize;
+}
+

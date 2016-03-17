@@ -1,3 +1,12 @@
+/*
+ * Hier komen alle less variabelen en mixins
+ * Tip: link dit bestand als eerste bovenaan in index.php 
+ */
+.customBorderBackground {
+  background-color: #8ac008;
+  border: 5px solid #78a807;
+  border-radius: 6px;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -20,11 +29,11 @@
   font-size: 45px;
   font-weight: bold;
   text-align: center;
+  color: white;
+  padding: 10px;
   background-color: #8ac008;
   border: 5px solid #78a807;
-  color: white;
   border-radius: 6px;
-  padding: 10px;
 }
 body {
   font-family: Verdana, Arial;
@@ -274,4 +283,13 @@ hr {
 }
 #tblUsers {
   margin-right: 0px;
+}
+p#lessExample {
+  border: 2px solid #ecf7f9;
+  border-radius: 0.5em;
+  background-color: #b2e0e6;
+  color: #19474d;
+  padding: 1em;
+  margin: 2em 1em 2em 1em;
+  font-size: 2em;
 }

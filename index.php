@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>inlogregistratietutorialsite</title>	
-		<link rel="stylesheet" type="text/css" href="css/style.php">
-		<link rel="stylesheet" type="text/css" href="css/style-split.css">
-		<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui-1.11.4.custom/jquery-ui.css">
+		<title>inlogregistratietutorialsite</title>
 		<link rel="stylesheet" type="text/css" href="./css/style-less.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.php">
+		<link rel="stylesheet" type="text/css" href="./css/style-split.css">
+		<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui-1.11.4.custom/jquery-ui.css">
+		
 		
 		<!-- Dit is een link naar LESS -->		
 		<!--<link rel="stylesheet/less" type="text/css" href="css/style-less.less"> -->

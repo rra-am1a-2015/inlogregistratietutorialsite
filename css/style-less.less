@@ -1,18 +1,20 @@
-// Hoi
+/*
+ * Hier komen alle less variabelen en mixins
+ * Tip: link dit bestand als eerste bovenaan in index.php 
+ */
+ 
 @baseColor: #65C1CD;
 @fontSize: 2em;
 @borderColor: white;
 @borderExample: 2px solid lighten(@baseColor, 35%);
 @margin: 2em 1em 2em 1em;
+@headFootColor: RGB(138, 192, 8);
+@linkColor: RGB(255, 127, 0);
 
-
-p#lessExample
+// Dit is een mixin
+.customBorderBackground
 {
-	border: @borderExample;
-	border-radius: 0.5em;
-	background-color: lighten(@baseColor, 20%);
-	color: darken(@baseColor, 40%);
-	padding: 1em;
-	margin: @margin;
-	font-size: @fontSize;
+	background-color: @headFootColor;
+	border:5px solid darken(@headFootColor, 5%);
+	border-radius:6px;
 }
