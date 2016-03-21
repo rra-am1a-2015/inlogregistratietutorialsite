@@ -1,4 +1,4 @@
-<form class="table" action="index.php?content=register" method="post">
+<form id="register" class="table" action="index.php?content=register" method="post">
 	<table>
 		<tr>
 			<td>voornaam: </td>

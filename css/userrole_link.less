@@ -2,11 +2,9 @@
 
 #user_info
 {
-	border:1px solid rgba(101, 193, 205, 1);
+	.customBorderBackground(@userInfoColor, 5px, solid, 6px);
 	margin-top:10px;
-	padding:10px;
-	border-radius:6px;
-	background-color:rgba(101, 193, 205, 1);
+	padding:10px;	
 	color: white;
 }
 
@@ -22,10 +20,8 @@
 
 #userrole_link
 {
-	background-color:@linkColor;
-	border:5px solid darken(@linkColor, 10%);
-	color:white;
-	border-radius:6px;
+	.customBorderBackground(@linkColor, 5px, solid, 6px);	
+	color:white;	
 	text-align:center;
 	margin-top:10px;
 	font-size:16px;

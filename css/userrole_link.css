@@ -3,11 +3,11 @@
  * Tip: link dit bestand als eerste bovenaan in index.php 
  */
 #user_info {
-  border: 1px solid #65c1cd;
+  background-color: #65c1cd;
+  border: 5px solid #3fb1c1;
+  border-radius: 6px;
   margin-top: 10px;
   padding: 10px;
-  border-radius: 6px;
-  background-color: #65c1cd;
   color: white;
 }
 #user_info #right {
@@ -19,8 +19,8 @@
 #userrole_link {
   background-color: #ff7f00;
   border: 5px solid #cc6600;
-  color: white;
   border-radius: 6px;
+  color: white;
   text-align: center;
   margin-top: 10px;
   font-size: 16px;

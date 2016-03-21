@@ -2,11 +2,6 @@
  * Hier komen alle less variabelen en mixins
  * Tip: link dit bestand als eerste bovenaan in index.php 
  */
-.customBorderBackground {
-  background-color: #8ac008;
-  border: 5px solid #78a807;
-  border-radius: 6px;
-}
 * {
   margin: 0px;
   padding: 0px;
@@ -14,8 +9,8 @@
 #link {
   background-color: #ff7f00;
   border: 5px solid #cc6600;
-  color: white;
   border-radius: 6px;
+  color: white;
   text-align: center;
   margin-top: 10px;
   font-size: 16px;
@@ -32,7 +27,7 @@
   color: white;
   padding: 10px;
   background-color: #8ac008;
-  border: 5px solid #78a807;
+  border: 5px solid #678f06;
   border-radius: 6px;
 }
 body {
@@ -46,10 +41,10 @@ body {
   width: 800px;
 }
 #content {
-  border: 0px solid green;
   background-color: #dddddd;
-  padding: 20px;
+  border: 5px solid #c4c4c4;
   border-radius: 6px;
+  padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -63,17 +58,19 @@ a {
   margin: 0px auto;
 }
 #register input {
-  border-radius: 6px;
+  border-radius: px;
   border: 1px solid grey;
   padding: 10px;
   width: 150px;
 }
+#register table {
+  padding: 6px;
+  border: 0px solid grey;
+  border-collapse: collapse;
+}
 #register table td {
   padding: 6px;
   border: 0px solid grey;
-}
-#register table {
-  border-collapse: collapse;
 }
 #register input[type=submit] {
   background-color: #ff7f00;
@@ -292,4 +289,25 @@ p#lessExample {
   padding: 1em;
   margin: 2em 1em 2em 1em;
   font-size: 2em;
+}
+#patMatch {
+  background-color: #fff0ff;
+  border-color: #ff90ff;
+  color: #9e00ff;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 6px;
+  padding: 1em;
+  margin: 1em 1em 1em 0em;
+  text-align: left;
+  line-height: 2em;
+}
+#guardMixin {
+  background-color: #556677;
+  font-size: 2em;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #883322;
+  margin: 1em 1em 1em 0em;
+  padding: 1em;
 }

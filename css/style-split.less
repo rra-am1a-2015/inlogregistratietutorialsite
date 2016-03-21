@@ -8,10 +8,8 @@
 
 #link
 {
-	background-color:@linkColor;
-	border:5px solid darken(@linkColor, 10%);
-	color:white;
-	border-radius:6px;
+	.customBorderBackground(@linkColor, 5px, solid, 6px);	
+	color:white;	
 	text-align:center;
 	margin-top:10px;
 	font-size:16px;
@@ -31,7 +29,7 @@
 	text-align:center;
 	color:white;
 	padding:10px;
-	.customBorderBackground;
+	.customBorderBackground(@headFootColor, 5px, solid, 6px);
 }
 
 body
@@ -50,10 +48,8 @@ body
 
 #content
 {
-	border:0px solid green;
-	background-color:RGB(221,221,221);
+	.customBorderBackground(@contentColor, 5px, solid, 6px);
 	padding:20px;
-	border-radius:6px;
 	margin-top:20px;
 	margin-bottom:20px;
 }
@@ -69,39 +65,43 @@ a:hover
 	//font-size:15px;
 }
 
+//Nested rule
+
 #register
 {
 	border:0px solid grey;
 	width: 300px;
 	margin:0px auto;
-}
-
-#register input
-{
-	border-radius: 6px;
-	border:1px solid grey;
-	padding:10px;
-	width:150px;
-}
-
-#register table td
-{
-	padding:6px;
-	border:0px solid grey;
-}
-
-#register table
-{
-	border-collapse:collapse;
-}
-
-#register input[type=submit]
-{
-	background-color:rgb(255, 127, 0);
-	color:white;
-	font-size:1.1em;
-	font-weight:bold;
-	width:171px;
+	
+	input
+	{
+		border-radius: px;
+		border:1px solid grey;
+		padding:10px;
+		width:150px;
+	}
+	
+	table 
+	{
+		padding:6px;
+		border:0px solid grey;
+		border-collapse:collapse;
+		
+		td
+		{
+			padding:6px;
+			border:0px solid grey;
+		}
+	}
+	
+	input[type=submit]
+	{
+		background-color:rgb(255, 127, 0);
+		color:white;
+		font-size:1.1em;
+		font-weight:bold;
+		width:171px;
+	}
 }
 
 .styleUl
@@ -291,7 +291,7 @@ a:hover
 
 #dev_container nav, section
 {
-	background-color: rgba(200, 200, 200, 1);
+	background-color: @navSectionColor;
 	
 	padding:1%;
 	padding-bottom:1000em;
@@ -401,5 +401,79 @@ p#lessExample
 	padding: 1em;
 	margin: @margin;
 	font-size: @fontSize;
+}
+
+ 
+
+.customPatMatch(fire, @color)
+{
+	background-color: darken(@color, 10%);
+	border-color: darken(@color, 20%);	
+	color: lighten(@color, 18%);	
+}
+.customPatMatch(earth, @color)
+{
+	background-color: darken(@color, 10%);
+	border-color: darken(@color, 20%);	
+	color: darken(@color, 80%);
+}
+.customPatMatch(air, @color)
+{
+	background-color: darken(@color, 10%);
+	border-color: darken(@color + #328, 20%);	
+	color: darken(@color + #328, 80%);
+}
+.customPatMatch(water, @color)
+{
+	background-color: darken(@color, 10%);
+	border-color: darken(@color, 20%);	
+	color: darken(@color, 80%);
+}
+.customPatMatch(@_, @_)
+{
+	border-width: 5px;
+	border-style: solid;
+	border-radius: @borderRadius;
+	padding: 1em;
+	margin: 1em 1em 1em 0em;
+	text-align: left;
+	line-height: 2em;
+}
+#patMatch
+{
+	.customPatMatch(@state,@patMatchColor);
+}
+
+// Guarded Mixin
+@guardMixinBackgroundColor: 0;
+
+.guardMixin(@color) when ( @color >  6 )
+{
+	background-color: @color;
+	font-size: 2em;
+	border-style: solid;
+	border-width: 5px;
+	border-color: darken(@color, 20%);
+	
+}
+.guardMixin(@color) when ( @color <  #445 )
+{
+	background-color: @color;
+	font-size: 5em;
+	border-style: solid;
+	border-width: 5px;
+	border-color: darken(@color, 20%);
+	
+}
+.guardMixin(@_) 
+{
+	margin: 1em 1em 1em 0em;
+	padding: 1em;
+}
+
+
+#guardMixin
+{
+	.guardMixin(@guardMixinBackgroundColor);
 }
 
