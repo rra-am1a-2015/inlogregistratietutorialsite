@@ -445,9 +445,10 @@ p#lessExample
 }
 
 // Guarded Mixin
-@guardMixinBackgroundColor: 0;
+// Guarded Mixin
+@guardMixinBackgroundColor: rgb(5, 0, 0);
 
-.guardMixin(@color) when ( @color >  6 )
+.guardMixin(@color) when ( red(@color) >=  6 )
 {
 	background-color: @color;
 	font-size: 2em;
@@ -456,7 +457,7 @@ p#lessExample
 	border-color: darken(@color, 20%);
 	
 }
-.guardMixin(@color) when ( @color <  #445 )
+.guardMixin(@color) when ( red(@color) <  6 )
 {
 	background-color: @color;
 	font-size: 5em;
@@ -476,4 +477,5 @@ p#lessExample
 {
 	.guardMixin(@guardMixinBackgroundColor);
 }
+
 

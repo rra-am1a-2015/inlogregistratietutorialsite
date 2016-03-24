@@ -303,11 +303,11 @@ p#lessExample {
   line-height: 2em;
 }
 #guardMixin {
-  background-color: #556677;
-  font-size: 2em;
+  background-color: #050000;
+  font-size: 5em;
   border-style: solid;
   border-width: 5px;
-  border-color: #883322;
+  border-color: #000000;
   margin: 1em 1em 1em 0em;
   padding: 1em;
 }
