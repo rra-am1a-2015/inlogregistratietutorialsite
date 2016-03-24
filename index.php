@@ -3,9 +3,9 @@
 <html>
 	<head>
 		<title>inlogregistratietutorialsite</title>
-		<link rel="stylesheet" type="text/css" href="./css/style-less.css">
-		<link rel="stylesheet" type="text/css" href="./css/style.php">
-		<link rel="stylesheet" type="text/css" href="./css/style-split.css">
+		<link rel="stylesheet/less" type="text/css" href="./css/style-less.less">
+		<link rel="stylesheet/less" type="text/css" href="./css/style.php">
+		<link rel="stylesheet/less" type="text/css" href="./css/style-split.less">
 		<link rel="stylesheet" type="text/css" href="./jquery/jquery-ui-1.11.4.custom/jquery-ui.css">
 		
 		
@@ -19,7 +19,7 @@
 		<script src='./jquery/jquery-ui-1.11.4.custom/jquery-ui.js'></script>
 		
 		<!-- Verwijzing naar LESS javascript bestand -->
-		<!-- <script src="./less.js-2.5.3/dist/less.js"></script> -->
+		<script src="./less.js-2.5.3/dist/less.js"></script>
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
 	</head>
 	<body>
