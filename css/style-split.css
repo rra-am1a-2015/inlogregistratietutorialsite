@@ -303,11 +303,22 @@ p#lessExample {
   line-height: 2em;
 }
 #guardMixin {
-  background-color: #08dcdc;
-  font-size: 5em;
+  background-color: #97dcdc;
+  font-size: 1em;
   border-style: solid;
   border-width: 5px;
-  border-color: #047a7a;
+  border-color: #4bc2c2;
   margin: 1em 1em 1em 0em;
   padding: 1em;
+}
+#guardMixinOff {
+  margin: 1em 1em 1em 0em;
+  padding: 1em;
+}
+#replace {
+  background-color: #86dff5;
+  border: replace("1px solid rgb(23, 34, 45)", "px", "em");
+  margin: 1em 1em 1em 0em;
+  padding: 1em;
+  font-size: 2em;
 }
