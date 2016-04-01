@@ -4,3 +4,5 @@
 <a href='index.php?content=developer_homepage&page=tutorials/less/tut_less_pat_match&topic=less'>LESS pattern matching</a>
 <a href='index.php?content=developer_homepage&page=tutorials/less/tut_less_guard_mixin&topic=less'>LESS guarded mixin</a>
 <a href='index.php?content=developer_homepage&page=tutorials/less/tut_less_functions&topic=less'>LESS functions</a>
+<a href='index.php?content=developer_homepage&page=tutorials/less/tut_less_loops&topic=less'>LESS loops</a>
+<a href='index.php?content=developer_homepage&page=tutorials/less/tut_less_php_parser&topic=less'>LESS PHP parser</a>

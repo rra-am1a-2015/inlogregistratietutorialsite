@@ -529,5 +529,26 @@ p#lessExample
 	.replaceMixin(@border);
 }
 
+//################loops############################
+@counter: 1;
 
+.loops(@counterDiv) when ( @counterDiv < 6)
+{
+    .loops(@counterDiv + 1);
+    #div-@{counterDiv} 
+    {
+        border: 5px solid #F80;
+        font-size: 1em + @counterDiv * 0.4em; 
+        margin-top:1em;
+        margin-left: 0em + @counterDiv * 0.5em;
+        width: 400px - @counterDiv * 50px;
+        padding: 1em - @counterDiv * 0.2em;  
+        background:  #999 + @counterDiv * #111;
+        color: #eee - @counterDiv * #111;
+    }
+}
 
+#loops
+{    
+     .loops(@counter); 
+}
