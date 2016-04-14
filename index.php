@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<title>inlogregistratietutorialsite</title>
+        
 		<link rel="stylesheet/less" type="text/css" href="./css/style-less.less">
 		<link rel="stylesheet/less" type="text/css" href="./css/style.php">
 		<link rel="stylesheet/less" type="text/css" href="./css/style-split.less">

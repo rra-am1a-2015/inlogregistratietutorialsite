@@ -1,2 +1,0 @@
-<a href='index.php?content=developer_homepage&page=tutorials/sass/tut_sass_get_started&topic=sass'>SASS get started</a>
-<a href='index.php?content=developer_homepage&page=tutorials/sass/tut_sass_syntax&topic=sass'>SASS syntax</a>
