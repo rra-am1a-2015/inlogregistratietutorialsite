@@ -3,12 +3,18 @@
     $username = "root";
     $password = "";
     $databasename = "am1a_2015_loginregistration";
+    $id = 9;
+    $userrole = "developer";
     
     try
     {
         $conn = new PDO("mysql:host=".$servername.";dbname=".$databasename, $username, $password);
         
-        $stmt = $conn->prepare("SELECT * FROM `users`");
+        $stmt = $conn->prepare("SELECT * FROM `users` WHERE `id` = :id OR `userrole` = :userrole");
+        
+        // Voorbeeld van bindParam!
+        $stmt->bindParam(":id", $id);
+        $stmt->bindParam(":userrole", $userrole);
         
         $stmt->execute();
         

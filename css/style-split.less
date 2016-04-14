@@ -552,3 +552,23 @@ p#lessExample
 {    
      .loops(@counter); 
 }
+
+.tabel(@pixels)
+{
+    border-collapse: collapse;
+    border: @pixels solid #F80; 
+    
+}
+
+
+.tblPDO
+{
+    @pixels: 3px;
+    .tabel(@pixels);    
+    
+    td
+    {
+        border: @pixels solid #F80;
+        padding: 1em;   
+    }
+}
