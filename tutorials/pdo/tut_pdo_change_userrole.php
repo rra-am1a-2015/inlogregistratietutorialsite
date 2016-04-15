@@ -1,13 +1,7 @@
-<?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $databasename = "am1a_2015_loginregistration";
-    
-    
+<?php    
     try
     {
-        $conn = new PDO("mysql:host=".$servername.";dbname=".$databasename, $username, $password);
+        include_once("./tutorials/pdo/pdo_connect.php");
         
         $stmt = $conn->prepare("SELECT * FROM `users`");
         
@@ -16,7 +10,6 @@
         $stmt->setFetchMode(PDO::FETCH_ASSOC);  // FETCH_NUM, FETCH_ASSOC, FETCH_BOTH
         
         $result = $stmt->fetchAll();
-        
         $fields = array("id", "firstname", "infix", "lastname", "userrole");
         
         $output = "<table class='tblPDO'>";
