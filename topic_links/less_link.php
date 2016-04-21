@@ -7,3 +7,4 @@
 <a href='index.php?content=developer_homepage&page=tutorials/less/tut_less_loops&topic=less'>LESS loops</a>
 <a href='index.php?content=developer_homepage&page=tutorials/less/tut_less_php_parser&topic=less'>LESS PHP parser</a>
 <a href='index.php?content=developer_homepage&page=tutorials/less/tut_less_php_compile_file&topic=less'>LESS PHP parse in file</a>
+<a href='index.php?content=developer_homepage&page=tutorials/less/toets_less&topic=less'>LESS Toets</a>
